@@ -36,6 +36,7 @@
 (require 'cerbere-phpunit)
 (eval-after-load "go-mode" '(require 'cerbere-gotest))
 (eval-after-load "python" '(require 'cerbere-tox))
+(eval-after-load "ruby-mode" '(require 'cerbere-ruby-minitest))
 
 
 ;;; Customize ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -58,7 +59,9 @@
 (defvar cerbere-backends
   '(("py" . cerbere-tox)
     ("go" . cerbere-gotest)
-    ("php" . cerbere-phpunit))
+    ("php" . cerbere-phpunit)
+    ("rb" . cerbere-ruby-minitest))
+
   "The list of Cerbere backends.
 Each backend provide several method for unit testing.")
 

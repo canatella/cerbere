@@ -23,6 +23,7 @@ In your `.emacs` file, add this :
 (add-hook 'python-mode-hook 'cerbere-mode)
 (add-hook 'go-mode-hook 'cerbere-mode)
 (add-hook 'web-mode-hook 'cerbere-mode)
+(add-hook 'ruby-mode-hook 'cerbere-mode)
 ```
 
 ## Keymap
